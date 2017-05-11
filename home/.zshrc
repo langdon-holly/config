@@ -42,6 +42,7 @@ zstyle :prompt:grml:right:setup items lzh-battery
 #REPORTTIME=60 # set to 5 by grml
 #SAVEHIST=512 # set to 10000 by grml
 PATH+=:~/mongodb-linux-x86_64-3.4.1/bin
+VISUAL=vim
 
 _JAVA_AWT_WM_NONREPARENTING=1
 
