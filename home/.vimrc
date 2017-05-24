@@ -1,3 +1,3 @@
-set expandtab shiftwidth=2
+set expandtab shiftwidth=2 hlsearch
 syntax enable
 
