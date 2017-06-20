@@ -13,6 +13,13 @@ main = xmonad $ def
   , keys = myKeys}
 
 myKeys conf@(XConfig {modMask = modm}) =
-  M.insert (modm, xK_s) (spawn "screenshot") $ defaultKeys conf
+  M.union
+  ( M.fromList
+    [ ((modm, xK_s), (spawn "screenshot"))
+    , ((modm, xK_d), (spawn "~/10min"))
+    , ((noModMask, 0x1008FF13), (spawn "vol+"))
+    , ((noModMask, 0x1008FF11), (spawn "vol-"))
+    , ((noModMask, 0x1008FF12), (spawn "vol0"))])
+  (defaultKeys conf)
   where XConfig {keys = defaultKeys} = def
 
