@@ -6,7 +6,7 @@ setopt no_auto_cd beep globdots no_hist_ignore_all_dups nomatch no_share_history
 # maybe: hup print_exit_value nonotify
 
 #alias view="vim -R"
-alias ls="ls -A"
+alias ls="ls --color -A"
 #alias xmonad="lzh-bg xmonad"
 alias chromium="lzh-bg chromium"
 alias chrome=chromium
