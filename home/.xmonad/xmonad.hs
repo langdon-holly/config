@@ -15,7 +15,8 @@ main = xmonad $ def
 myKeys conf@(XConfig {modMask = modm}) =
   M.union
   ( M.fromList
-    [ ((modm, xK_s), (spawn "screenshot"))
+    [ ((modm .|. shiftMask, xK_l), (spawn "slock"))
+    , ((modm, xK_s), (spawn "screenshot"))
     , ((modm, xK_d), (spawn "~/10min"))
     , ((noModMask, 0x1008FF13), (spawn "vol+"))
     , ((noModMask, 0x1008FF11), (spawn "vol-"))
