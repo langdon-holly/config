@@ -19,7 +19,7 @@ alias meh="lzh-bg meh"
 alias gimp="lzh-bg gimp"
 alias display="lzh-bg display"
 alias firefox-developer="lzh-bg firefox-developer"
-alias firefox="firefox-developer"
+alias way-cooler="lzh-bg way-cooler"
 alias wifi-menu="wifi-menu -o"
 
 function ..() cd ..;
