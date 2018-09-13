@@ -30,13 +30,13 @@ function lzh-bg() {echo "&>> ~/logs/$1.log"; $@ &>> ~/logs/"$1".log &;}
 #prompt off
 #PS1="%n@%m %(1j.(%j job%(2j.s.)%) .)%~%# "
 zstyle :prompt:grml:left:setup items rc change-root user at host jobs path vcs percent
-zstyle :prompt:grml:left:items:percent post ' '
+#zstyle :prompt:grml:left:items:percent post ' ' # for when right indent is off
 zstyle ':prompt:grml:*:items:jobs' token '%(1j.[%j job%(2j.s.)] .)'
 
 lzh-battery-level()REPLY="$(echo -n $GRML_BATTERY_LEVEL | sed -e 's/^ //')";
 grml_theme_add_token lzh-battery -f lzh-battery-level
 zstyle :prompt:grml:right:setup items lzh-battery
-ZLE_RPROMPT_INDENT=0
+#ZLE_RPROMPT_INDENT=0 # causes completion misalignment
 
 #HISTFILE=~/.zsh_history # set by grml
 #REPORTTIME=60 # set to 5 by grml
