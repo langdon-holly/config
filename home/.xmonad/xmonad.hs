@@ -9,8 +9,11 @@ main = xmonad $ def
   , focusFollowsMouse = False
   , clickJustFocuses = False --True
   , startupHook = do
-      spawn "xterm"
-  , keys = myKeys}
+      spawn term
+  , keys = myKeys
+  , terminal = term}
+
+term = "st -f Hack:size=10"
 
 myKeys conf@(XConfig {modMask = modm}) =
   M.union

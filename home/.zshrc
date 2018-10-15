@@ -23,6 +23,7 @@ alias firefox-dev="firefox-developer-edition"
 alias way-cooler="lzh-bg way-cooler"
 alias wifi-menu="wifi-menu -o"
 alias steam="lzh-bg steam"
+alias st="lzh-bg st -f Hack:size=10"
 
 function ..() cd ..;
 function lzh-bg() {echo "&>> ~/logs/$1.log"; $@ &>> ~/logs/"$1".log &;}
