@@ -1,5 +1,4 @@
 *foreground: gray
 *background: black
-*faceName: Hack
-*faceSize: 10
-
+#*faceName: Hack
+#*faceSize: 10

@@ -13,7 +13,7 @@ main = xmonad $ def
   , keys = myKeys
   , terminal = term}
 
-term = "st -f Hack:size=10"
+term = "st -f iosevka-10"
 
 myKeys conf@(XConfig {modMask = modm}) =
   M.union

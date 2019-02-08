@@ -20,7 +20,7 @@ alias firefox-developer-edition="lzh-bg firefox-developer-edition"
 alias firefox-dev="firefox-developer-edition"
 alias wifi-menu="wifi-menu -o"
 alias steam="lzh-bg steam"
-alias st="lzh-bg st -f Hack:size=10"
+alias st="lzh-bg st -f iosevka-10"
 
 function ..() cd ..;
 function lzh-bg() {echo "&>> ~/logs/$1.log"; $@ &>> ~/logs/"$1".log &;}
