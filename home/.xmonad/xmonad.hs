@@ -20,7 +20,7 @@ myKeys conf@(XConfig {modMask = modm}) =
   ( M.fromList
     [ ((modm .|. shiftMask, xK_l), (spawn "slock"))
     , ((modm, xK_s), (spawn "screenshot"))
-    , ((modm, xK_d), (spawn "~/10min"))
+    , ((modm .|. shiftMask, xK_d), (spawn "~/10min"))
     , ((noModMask, 0x1008FF13), (spawn "vol+"))
     , ((noModMask, 0x1008FF11), (spawn "vol-"))
     , ((noModMask, 0x1008FF12), (spawn "vol0"))])
