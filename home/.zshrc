@@ -1,9 +1,9 @@
-setopt list_packed extended_glob inc_append_history noclobber append_create warn_create_global
-# maybe: rc_expand_param hist_lex_words interactive_comments no_multi_func_def combining_chars equals
+setopt list_packed extended_glob noclobber append_create warn_create_global
+# maybe: rc_expand_param hist_lex_words interactive_comments no_multi_func_def combining_chars equals inc_append_history
 
 # because grml
-setopt no_auto_cd beep globdots no_hist_ignore_all_dups nomatch no_share_history nonotify
-# maybe: hup print_exit_value
+setopt no_auto_cd beep globdots no_hist_ignore_all_dups nomatch nonotify
+# maybe: hup print_exit_value no_share_history
 
 #alias view="vim -R"
 alias ls="ls --color -A"
@@ -37,9 +37,8 @@ grml_theme_add_token lzh-battery -f lzh-battery-level
 zstyle :prompt:grml:right:setup items lzh-battery
 #ZLE_RPROMPT_INDENT=0 # causes completion misalignment
 
-#HISTFILE=~/.zsh_history # set by grml
+HISTFILE= #because grml
 #REPORTTIME=60 # set to 5 by grml
-#SAVEHIST=512 # set to 10000 by grml
 PATH+=:~/mongodb-linux-x86_64-3.4.1/bin
 PATH+=:~/bin
 VISUAL=vim
