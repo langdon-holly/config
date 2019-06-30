@@ -5,7 +5,7 @@ setopt list_packed extended_glob noclobber append_create warn_create_global
 setopt no_auto_cd beep globdots no_hist_ignore_all_dups nomatch nonotify
 # maybe: hup print_exit_value no_share_history
 
-alias ls="ls --color -A"
+alias ls="LC_ALL=C.UTF-8 ls --color -A"
 alias chromium="lzh-bg chromium"
 alias chrome=chromium
 alias minecraft-launcher="lzh-bg minecraft-launcher"
