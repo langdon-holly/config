@@ -34,6 +34,14 @@ bindsym {
   $mod+Shift+Escape exit
   $mod+Shift+r reload
 
+  $mod+XF86Eject exec swaylock -c 000000
+  $mod+Alt+XF86Eject exec "swaylock -fc 000000; systemctl suspend"
+  $mod+p exec grim -c "$HOME/screenshots/$(date --rfc-3339=seconds | sed -e 's/ /T/').png"
+
+  XF86AudioMute exec vol0
+  XF86AudioLowerVolume exec vol-
+  XF86AudioRaiseVolume exec vol+
+
   # Workspace
 
   $mod+Left workspace prev_on_output
