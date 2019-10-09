@@ -7,7 +7,6 @@ setopt no_auto_cd beep globdots no_hist_ignore_all_dups nomatch nonotify
 
 alias ls="LC_ALL=C.UTF-8 ls --color -A"
 alias chromium="lzh-bg chromium"
-alias chrome=chromium
 alias minecraft-launcher="lzh-bg minecraft-launcher"
 alias minecraft=minecraft-launcher
 alias mongod="lzh-bg mongod"
