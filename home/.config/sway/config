@@ -96,5 +96,3 @@ bindsym {
 }
 
 exec $term
-
-exec_always "xrdb ~/.Xresources"
