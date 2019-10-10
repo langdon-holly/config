@@ -14,7 +14,6 @@ alias display="lzh-bg display"
 alias firefox-developer-edition="lzh-bg firefox-developer-edition"
 alias firefox-dev="firefox-developer-edition"
 alias wifi-menu="wifi-menu -o"
-alias steam="lzh-bg steam"
 alias st="lzh-bg st -f iosevka-10"
 alias bitwarden="lzh-bg bitwarden"
 
