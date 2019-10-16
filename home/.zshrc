@@ -14,7 +14,7 @@ alias display="lzh-bg display"
 alias firefox-developer-edition="lzh-bg firefox-developer-edition"
 alias firefox-dev="firefox-developer-edition"
 alias wifi-menu="wifi-menu -o"
-alias st="lzh-bg st -f iosevka-10"
+alias st="lzh-bg st"
 alias bitwarden="lzh-bg bitwarden"
 
 function ..() cd ..;
