@@ -5,7 +5,7 @@ set $right l
 set $down j
 set $left h
 
-set $term "st"
+set $term "st /usr/bin/zsh"
 
 output * bg #000000 solid_color
 

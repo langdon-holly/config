@@ -36,5 +36,6 @@ HISTFILE= #because grml
 PATH+=:~/mongodb-linux-x86_64-3.4.1/bin
 PATH+=:~/bin
 VISUAL=vim
+SHELL=/usr/bin/zsh
 
 _JAVA_AWT_WM_NONREPARENTING=1
