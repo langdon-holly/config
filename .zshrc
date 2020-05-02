@@ -16,6 +16,7 @@ alias firefox-dev="firefox-developer-edition"
 alias wifi-menu="wifi-menu -o"
 alias st="lzh-bg st"
 alias bitwarden="lzh-bg bitwarden"
+alias blender="lzh-bg blender"
 
 function ..() cd ..;
 function lzh-bg() {echo "&>> ~/logs/$1.log"; $@ &>> ~/logs/"$1".log &;}
