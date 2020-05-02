@@ -7,7 +7,6 @@ setopt no_auto_cd beep globdots no_hist_ignore_all_dups nomatch nonotify
 
 alias ls="LC_ALL=C.UTF-8 ls --color -A"
 alias chromium="lzh-bg chromium"
-alias mongod="lzh-bg mongod"
 alias meh="lzh-bg meh"
 alias gimp="lzh-bg gimp"
 alias display="lzh-bg display"
@@ -34,7 +33,6 @@ zstyle :prompt:grml:right:setup items lzh-battery
 
 HISTFILE= #because grml
 #REPORTTIME=60 # set to 5 by grml
-PATH+=:~/mongodb-linux-x86_64-3.4.1/bin
 PATH+=:~/bin
 VISUAL=vim
 SHELL=/usr/bin/zsh
