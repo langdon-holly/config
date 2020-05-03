@@ -31,10 +31,12 @@ grml_theme_add_token lzh-battery -f lzh-battery-level
 zstyle :prompt:grml:right:setup items lzh-battery
 #ZLE_RPROMPT_INDENT=0 # causes completion misalignment
 
-HISTFILE= #because grml
+unset HISTFILE #because grml
 #REPORTTIME=60 # set to 5 by grml
 PATH+=:~/bin
 VISUAL=vim
 SHELL=/usr/bin/zsh
 
 _JAVA_AWT_WM_NONREPARENTING=1
+LESSHISTFILE=-
+NODE_REPL_HISTORY=
