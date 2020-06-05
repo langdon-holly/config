@@ -11,26 +11,17 @@ alias meh="lzh-bg meh"
 alias gimp="lzh-bg gimp"
 alias display="lzh-bg display"
 alias firefox-developer-edition="lzh-bg firefox-developer-edition"
-alias firefox-dev="firefox-developer-edition"
 alias wifi-menu="wifi-menu -o"
 alias st="lzh-bg st"
 alias bitwarden="lzh-bg bitwarden"
 alias blender="lzh-bg blender"
+alias audacity="lzh-bg audacity"
 
 function ..() cd ..;
 function lzh-bg() {echo "&>> ~/logs/$1.log"; $@ &>> ~/logs/"$1".log &;}
 
-#prompt off
-#PS1="%n@%m %(1j.(%j job%(2j.s.)%) .)%~%# "
-zstyle :prompt:grml:left:setup items rc change-root user at host jobs path vcs percent
-#zstyle :prompt:grml:left:items:percent post ' ' # for when right indent is off
-zstyle ':prompt:grml:*:items:jobs' token '%(1j.[%j job%(2j.s.)] .)'
-
-lzh-battery-level()REPLY="$(echo -n $GRML_BATTERY_LEVEL | sed -e 's/^ //')";
-grml_theme_add_token lzh-battery -f lzh-battery-level
-zstyle :prompt:grml:right:setup items lzh-battery
-#ZLE_RPROMPT_INDENT=0 # causes completion misalignment
-
+prompt off
+PS1="%B%(!.%K{red}%n%k.%F{blue}%n%f)%F{black}@%f%b%m%B%d%b %(1j.%F{green}[%j job%(2j.s.)]%f.)> "
 unset HISTFILE #because grml
 #REPORTTIME=60 # set to 5 by grml
 PATH+=:~/bin
