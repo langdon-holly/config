@@ -21,7 +21,7 @@ function ..() cd ..;
 function lzh-bg() {echo "&>> ~/logs/$1.log"; $@ &>> ~/logs/"$1".log &;}
 
 prompt off
-PS1="%B%(!.%K{red}%n%k.%F{blue}%n%f)%F{black}@%f%b%m%B%d%b %(1j.%F{green}[%j job%(2j.s.)]%f.)> "
+PS1="%B%(!.%K{red}%n%k.%F{blue}%n%f)%F{black}@%f%b%m%B%d%b %(1j.%F{green}[%j job%(2j.s.)]%f.)%B>%b "
 unset HISTFILE #because grml
 #REPORTTIME=60 # set to 5 by grml
 PATH+=:~/bin
