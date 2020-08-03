@@ -6,12 +6,10 @@ setopt no_auto_cd beep globdots no_hist_ignore_all_dups nomatch nonotify
 # maybe: hup print_exit_value no_share_history
 
 alias ls="LC_ALL=C.UTF-8 ls --color -A"
-alias chromium="lzh-bg chromium"
 alias meh="lzh-bg meh"
 alias gimp="lzh-bg gimp"
 alias display="lzh-bg display"
 alias firefox="lzh-bg firefox"
-alias firefox-developer-edition="lzh-bg firefox-developer-edition"
 alias wifi-menu="wifi-menu -o"
 alias st="lzh-bg st"
 alias bitwarden="lzh-bg bitwarden"
