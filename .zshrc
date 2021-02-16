@@ -6,18 +6,12 @@ setopt no_auto_cd beep globdots no_hist_ignore_all_dups nomatch nonotify
 # maybe: hup print_exit_value no_share_history
 
 alias ls="LC_ALL=C.UTF-8 ls --color -A"
-alias meh="lzh-bg meh"
-alias gimp="lzh-bg gimp"
-alias display="lzh-bg display"
-alias firefox="lzh-bg firefox"
+for cmd in meh gimp display firefox st bitwarden blender audacity
+  alias $cmd="noterm $cmd" done
 alias wifi-menu="wifi-menu -o"
-alias st="lzh-bg st"
-alias bitwarden="lzh-bg bitwarden"
-alias blender="lzh-bg blender"
-alias audacity="lzh-bg audacity"
 
 function ..() cd ..;
-function lzh-bg() {echo "&>> ~/logs/$1.log"; $@ &>> ~/logs/"$1".log &;}
+function noterm() {$@ &>> ~/logs/"$1".log &|; exit;}
 
 prompt off
 PS1="%B%(!.%K{red}%n%k.%F{blue}%n%f)%F{black}@%m%f%F{white}%f%d %(1j.%K{green}%j job%(2j.s.)%k.)>%b "
