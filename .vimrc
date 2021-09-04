@@ -1,4 +1,4 @@
-set expandtab shiftwidth=2 hlsearch viminfo=
+set shiftwidth=0 hlsearch viminfo=
 syntax enable
 
 " vim-plug (https://github.com/junegunn/vim-plug)
